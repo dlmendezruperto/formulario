@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hola amigos</title>
+</head>
+<body>
+    <h1>Datos para crear un CV</h1>
+    <div class="datospers">
+        <form class="formulario1" action="/action_page.php" method="get" novalidate>
+        <fieldset class="f1">
+            <legend>Datos personales</legend>
+            <label for="Nombre">Nombre:
+                <input type="text" name="nombre" id="nombre">
+            </label>
+
+            <label for="Nombre">Apellidos:
+                <input type="text" name="apellido" id="apellido">
+            </label><br><br>
+
+            <radiogroup >
+                <label for="promociones">Sexo:</label>
+                <br>
+                <input type="radio" id="sexo" name="sexo" value="hombre" > Hombre<br>
+                <input type="radio" id="sexo" name="sexo" value="mujer"> Mujer<br>
+                <input type="radio" id="sexo" name="sexo" value="otro" autofocus checked> Otro<br>
+            </radiogroup><br><br>
+
+            <label for="telefono">Tel&eacute;fono:
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}">    
+            </label>
+            <br><br>
+            <label for="email">Correo electr&oacute;nico:
+            <input type="email" name="correo" id="correo" placeholder="tucorreo@dominio.com">
+            </label>
+            <br><br>
+        </fieldset>
+        </form>
+    </div>
+    <br><br>
+    <div class="estudios">
+        <form class="formulario2" action="/action_page.php" method="get">
+        <fieldset class="f2">
+            <legend>Estudios</legend>
+        <label for="Universidad">Universidad:
+            <input type="text" name="uni" id="uni">
+        </label>
+        <label for="url">URL:
+            <input type="text" name="url" id="url">
+        </label>
+        <label for="direccion">Direcci&oacute;n:
+            <input type="text" name="direccion" id="direccion">
+        </label><br><br>
+        
+        <label for="carrera">Carrera:</label>
+        <select class="carrera" name="carrera">
+            <option value="electronica" selected>Electr&oacute;nica</option>
+            <option value="sistemas">Sistemas en Computaci&oacute;n</option>
+            <option value="informatica">Inform&aacute;tica</option>
+            <option value="gestion_empresarial">Gesti&oacute;n empresarial</option>
+            <option value="industrial">Industrial</option>
+            <option value="quimica">Qu&iacute;mica</option>
+        </select>
+        <br><br>
+        <radiogroup >
+            <label for="promociones">&Uacute;ltimo grado de estudios</label>
+            <br>
+            <input type="radio" id="sexo" name="sexo" value="hombre" autofocus checked>Licenciatura<br>
+            <input type="radio" id="sexo" name="sexo" value="mujer">Maestria<br>
+            <input type="radio" id="sexo" name="sexo" value="otro">Doctorado<br>
+        </radiogroup><br><br>
+        <label for="desarrollo">&Aacute;rea de desarrollo profesional:</label><br>
+        <textarea name="desarrollo" id="desarrollo" cols="30" rows="2"></textarea>
+
+        </fieldset>
+        </form>
+    </div><br><br>
+
+    <div class="proyectos">
+        <fieldset class="f3">
+            <legend>Proyectos</legend>
+            <label for="projects">Suba sus proyectos: <br>
+                <input type="file" id="fileInput" name="file">
+            </label>
+            <br><br><br>
+            <label for="projects">Suba su foto:<br>
+                <input type="file" id="fileInput" name="file">
+            </label>
+            <br><br>
+            <label for="exp">Lugares de trabajo:</label><br>
+            <textarea name="experiencia" id="experiencia" cols="30" rows="4"></textarea><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </div>
+</body>
+</html>

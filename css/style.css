@@ -1,0 +1,18 @@
+
+body{
+    font-family:'Courier New', Courier, monospace;
+    background: rgb(122, 201, 158);
+}
+
+.f1{
+    background: orange;
+}
+.f2{
+    background: rgb(0, 255, 115);
+}
+.f3{
+    background: orange;
+}
+h1{
+    text-align: center;
+}
